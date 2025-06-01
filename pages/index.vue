@@ -2,7 +2,9 @@
 
 <template>
   <div class="min-h-screen flex items-center justify-center p-4">
-    <div class="w-full max-w-md rounded-2xl shadow-md p-6">
+    <div
+      class="w-full max-w-md rounded-2xl shadow-md p-6 bg-[var(--p-surface-700)]"
+    >
       <h1 class="text-2xl font-bold mb-4 text-center">Motus Game</h1>
       <div v-if="!won">
         <div class="mb-4">

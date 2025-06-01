@@ -1,6 +1,5 @@
 // nuxt.config.ts
 
-import { fileURLToPath } from "node:url";
 import { defineNuxtConfig } from "nuxt/config";
 import Aura from "@primeuix/themes/aura";
 import tailwindcss from "@tailwindcss/vite";
@@ -34,13 +33,5 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
-    resolve: {
-      alias: {
-        // "@"  → ./src
-        "@": fileURLToPath(new URL("./src", import.meta.url)),
-        // "@@" → ./
-        "@@": fileURLToPath(new URL(".", import.meta.url)),
-      },
-    },
   },
 });
