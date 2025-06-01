@@ -1,5 +1,6 @@
 // nuxt.config.ts
 
+import { defineNuxtConfig } from "nuxt/config";
 import Aura from "@primeuix/themes/aura";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config

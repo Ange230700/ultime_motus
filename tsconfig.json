@@ -1,5 +1,9 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    // ensure Nuxt’s own schema/types are pulled in
+    "types": ["@nuxt/schema"]
+  },
   "include": ["nuxt.d.ts", "nuxt.config.ts"]
 }
