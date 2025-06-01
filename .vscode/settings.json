@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["eslintcache", "nuxt", "primeuix", "primevue", "unhead"]
+  "cSpell.words": [
+    "eslintcache",
+    "nuxt",
+    "primeuix",
+    "primevue",
+    "tailwindcss",
+    "unhead"
+  ]
 }

@@ -3,7 +3,12 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     // ensure Nuxt’s own schema/types are pulled in
-    "types": ["@nuxt/schema"]
+    "types": ["@nuxt/schema"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": ["*"]
+    }
   },
-  "include": ["nuxt.d.ts", "nuxt.config.ts"]
+  "include": ["nuxt.d.ts", "nuxt.config.ts", "src/**/*.ts", "src/**/*.vue"]
 }
